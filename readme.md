@@ -85,4 +85,4 @@ Para executar o código é necessário instalar as dependências por meio do arq
 Em seguida execute: 
 > python main.py
 
-OBS: Lembrando que o banco presente no arquivo sysfar.sql precisa ser restaurado, procedimento o qual já foi explicado acima, para o mysql antes de executar este script.
+OBS: Lembrando que o banco presente no arquivo sysfar.sql precisa ser restaurado para o mysql, procedimento o qual já foi explicado acima, antes de executar este script.
