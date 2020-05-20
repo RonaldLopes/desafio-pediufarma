@@ -1,0 +1,6 @@
+#ignorando arquivos de ambiente virtual e backup do banco
+venv/
+
+
+sysfar.sql
+
