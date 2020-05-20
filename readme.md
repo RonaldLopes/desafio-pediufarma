@@ -73,3 +73,16 @@ Este método possui como retorno uma lista json conforme o solicitado e que salv
 
 
 OBS: Para mais detalhes favor consultar o código fonte.
+
+
+
+## Executando o código
+
+Para executar o código é necessário instalar as dependências por meio do arquivo requirements.txt . Para isso, em um ambiente virtual (virtualenv), execute a linha abaixo:
+
+> pip install -r requirements.txt
+
+Em seguida execute: 
+> python main.py
+
+OBS: Lembrando que o banco presente no arquivo sysfar.sql precisa ser restaurado, procedimento o qual já foi explicado acima, para o mysql antes de executar este script.
