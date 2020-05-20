@@ -5,11 +5,15 @@
 from db_controller import DatabaseController
 import json
 
-def converte_para_lista_json(dados_banco):
+def converte_para_lista_json(dados_banco, save_file = False):
     lista = []
 
     for dado in dados_banco:
         lista.append({'preco':dado[0],'ean':dado[1],'estoque':dado[2]})
+
+    if(save_file):
+        with open('desafio.json', 'w') as json_file:
+            json.dump(lista, json_file)
 
     return json.dumps(lista)
 
@@ -43,6 +47,6 @@ dados_filtrados = banco_de_dados.busca_estoque()
     Solução: O método converte_para_lista_json() existente nesse arquivo é responsável por esta operação.
 '''
 
-json = converte_para_lista_json(dados_banco=dados_filtrados)
+json = converte_para_lista_json(dados_banco=dados_filtrados, save_file=True)
 
 print(json)

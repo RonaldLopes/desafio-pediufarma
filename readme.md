@@ -1,5 +1,5 @@
 # Desafio Pediu Farma
-este é um readme explicativo do desafio e do processo de solução. O banco de dados se encontra aqui https://pediufarma.com.br/banco.zip 
+Este é um readme explicativo do desafio e do processo de solução. O banco de dados se encontra aqui https://pediufarma.com.br/banco.zip 
 ## Tarefa 1
 Obter as informações abaixo a partir do arquivo sysfar.sql:
 - Preço do produto;
