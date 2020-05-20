@@ -68,7 +68,7 @@ OBS:
 
 Para isso foi definido um método denominado de converte_para_lista_json() que recebe o retorno do método busca_estoque() pertencente a classe DatabaseController e que contem o resultado da aplicação da query já detalhada acima. 
 
-Este método recebe como retorno uma lista json conforme o solicitado.
+Este método possui como retorno uma lista json conforme o solicitado e que salva em um arquivo de nome desafio.json.
 
 
 

@@ -13,9 +13,9 @@ def converte_para_lista_json(dados_banco, save_file = False):
 
     if(save_file):
         with open('desafio.json', 'w') as json_file:
-            json.dump(lista, json_file)
+            json.dump(lista, json_file,indent = 2)
 
-    return json.dumps(lista)
+    return lista
 
 usuario_mysql = ''
 senha_mysql = ''
@@ -44,9 +44,9 @@ dados_filtrados = banco_de_dados.busca_estoque()
                                 { "ean":789000001, "preco":3.99,"estoque":18},
                                 ...
                                 ]
-    Solução: O método converte_para_lista_json() existente nesse arquivo é responsável por esta operação.
+    Solução: O método converte_para_lista_json() existente nesse arquivo é responsável por esta operação que posteriormente salva em um arquivo de nome desafio.json.
 '''
 
-json = converte_para_lista_json(dados_banco=dados_filtrados, save_file=True)
+retorno = converte_para_lista_json(dados_banco=dados_filtrados, save_file=True)
 
-print(json)
+print(retorno)
