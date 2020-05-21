@@ -1,5 +1,7 @@
 # Desafio Pediu Farma
+
 Este é um readme explicativo do desafio e do processo de solução. O banco de dados se encontra aqui https://pediufarma.com.br/banco.zip 
+
 ## Tarefa 1
 Obter as informações abaixo a partir do arquivo sysfar.sql:
 - Preço do produto;
@@ -22,6 +24,8 @@ O passo seguinte foi analisar as tabelas, dentre as tabelas analisadas, a tabela
 - pmc - foi considerado como valor referente ao preço cheio (PMC);
 - barra - foi considerado como valor referente ao código de barras do produto (EAN);
 - quantidade - foi considerado como valor referente a quantidade em estoque;
+
+OBS: os campos inipromo e fimpromo foram descartados pois não apresentavam valores aparentemente válidos, sendo que possuiam datas iguais entre os campos e similares a '2000-01-01' o que não fez muito sentido para um banco que na teoria estaria sendo utilizado. Outro fator que teve peso nessa decisão foi o campo vencimento, que intuitivamente indica o vencimento do produto/medicamento, e que possui datas superiores ao campo validade, permitindo chegar a conclusão que a validade da promoção pode estar contida no campo 'validade'.
 
 Para obter o preço do produto foi observado os requisitos previamente apresentados, estes foram filtrados por meio de query sql, a seguir o trecho responsável pelo filtro:
 
